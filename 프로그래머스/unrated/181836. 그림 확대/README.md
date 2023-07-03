@@ -1,10 +1,10 @@
 # [unrated] 그림 확대 - 181836 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181836?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181836) 
 
 ### 성능 요약
 
-메모리: 79.8 MB, 시간: 10.08 ms
+메모리: 76.5 MB, 시간: 10.87 ms
 
 ### 구분
 
