@@ -1,22 +1,25 @@
 class Solution {
     public int[] solution(String[] keyinput, int[] board) {
-        int[] answer = new int[2];
-        int x = board[0] / 2;
-        int y = board[1] / 2;
+        int x = 0;
+        int y = 0;
         
-        for(String s : keyinput) {
-            if(s.equals("up")) answer[1] += 1;
-            else if(s.equals("down")) answer[1] -= 1;
-            else if(s.equals("left")) answer[0] -= 1;
-            else if(s.equals("right")) answer[0] += 1;
-            
-            if(answer[0] > 0 && answer[0] > x) answer[0] = x;
-            else if(answer[0] < 0 && answer[0] < -x) answer[0] = -x;
-                
-            if(answer[1] > 0 && answer[1] > y) answer[1] = y;
-            else if(answer[1] < 0 && answer[1] < -y) answer[1] = -y;
+        for (String s : keyinput) {
+            switch (s) {
+                case "up":
+                    y = Math.min(y + 1, board[1] / 2);
+                    break;
+                case "down":
+                    y = Math.max(y - 1, -board[1] / 2);
+                    break;
+                case "left":
+                    x = Math.max(x - 1, -board[0] / 2);
+                    break;
+                case "right":
+                    x = Math.min(x + 1, board[0] / 2);
+                    break;
+            }
         }
-        
-        return answer;
+
+        return new int[]{x, y};
     }
 }
