@@ -14,12 +14,6 @@ class Solution {
             if(sizes[i][0] > wMax) wMax = sizes[i][0];
             if(sizes[i][1] > hMax) hMax = sizes[i][1];
         }
-        /*
-        for(int i = 0; i < sizes.length; i++) {
-            System.out.println(sizes[i][0] + " " + sizes[i][1]);
-        }
-        */
-        //System.out.println(wMax + " " + hMax);
         
         return wMax * hMax;
     }
