@@ -7,7 +7,6 @@ class Solution {
             if(c >= '0' && c <= '9') str += c;
         }
         
-        int[] answer = Arrays.stream(str.split("")).sorted().mapToInt(Integer::parseInt).toArray();
-        return answer;
+        return Arrays.stream(str.split("")).sorted().mapToInt(Integer::parseInt).toArray();
     }
 }
