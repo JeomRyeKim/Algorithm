@@ -1,19 +1,11 @@
 class Solution {
     public String solution(String s) {
         String answer = "";
-        int idx = 0;
+        boolean flag = true;
 
-        for(String str : s.split("")) {
-            if(str.equals(" ")) {
-                answer += " ";
-                idx = 0;
-            } else if(idx == 0) {
-                answer += str.toUpperCase();
-                idx++;
-            } else if(idx != 0) {
-                answer += str.toLowerCase();
-                idx++;
-            }
+        for(String str : s.toLowerCase().split("")) {
+            answer += flag ? str.toUpperCase() : str;
+            flag = str.equals(" ") ? true : false;
         }
         
         return answer;
