@@ -1,13 +1,12 @@
 class Solution {
-    public long solution(int price, int money, int count) {
-        long answer = money;
+    public long solution(int price, long money, int count) {
         int p = 0;
         
         for(int i=0; i<count; i++) {
             p += price;
-            answer -= p;
+            money -= p;
         }
 
-        return answer < 1 ? Math.abs(answer) : 0;
+        return money < 1 ? Math.abs(money) : 0;
     }
 }
