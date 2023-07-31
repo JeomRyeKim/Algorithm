@@ -1,7 +1,3 @@
-// x * y = brown + yellow
-// x + y = (brown + 4)//2
-// (x-2)(y-2)==yellow
-
 class Solution {
     public int[] solution(int brown, int yellow) {
         int[] answer = new int[2];
