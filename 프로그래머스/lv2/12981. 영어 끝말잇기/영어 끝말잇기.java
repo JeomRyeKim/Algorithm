@@ -18,7 +18,7 @@ class Solution {
             
             if(lastWord != firstWord || wordFound) {
                 answer[0] = (i % n) + 1;
-                answer[1] = (int) Math.ceil((double)(i + 1) / n);
+                answer[1] = Math.round((i / n) + 1);
                 break;
             }
         }
