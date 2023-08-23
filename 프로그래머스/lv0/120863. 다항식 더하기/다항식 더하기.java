@@ -1,6 +1,6 @@
 class Solution {
     public String solution(String polynomial) {
-        int xNum = 0; int num = 0;
+        int xNum = 0, num = 0;
 
         for (String s : polynomial.split(" ")) {
             if (s.contains("x"))
