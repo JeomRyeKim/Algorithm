@@ -24,7 +24,7 @@ class Solution {
         
         // 5단계
         if(answer.equals("")){
-            answer = "aaa";
+            answer = "a";
         }
         
         // 6단계
@@ -36,7 +36,6 @@ class Solution {
             answer = answer.substring(1, answer.length());
         else if (answer.endsWith("."))
             answer = answer.substring(0, answer.length()-1);
-        
         
         // 7단계
         if(answer.length() <= 2) {
